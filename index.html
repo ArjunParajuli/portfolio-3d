@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Your Name — Portfolio</title>
+  <meta name="description" content="Portfolio of Your Name — developer & creative technologist." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script type="importmap">
+    {
+      "imports": {
+        "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+      }
+    }
+  </script>
+</head>
+<body>
+  <canvas id="bg-canvas" aria-hidden="true"></canvas>
+
+  <header class="nav">
+    <a class="nav__logo" href="#hero" data-logo></a>
+    <nav class="nav__links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="nav__cta">Hire me</a>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <p class="hero__kicker reveal" data-kicker></p>
+      <h1 class="hero__title reveal" data-name></h1>
+      <p class="hero__tagline reveal" data-tagline></p>
+      <div class="hero__actions reveal">
+        <a href="#projects" class="btn btn--primary">View my work</a>
+        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      </div>
+      <div class="hero__scroll" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="glass reveal">
+        <h2 class="section__title">About me</h2>
+        <p class="section__text" data-about></p>
+        <div class="stats" data-stats></div>
+      </div>
+    </section>
+
+    <section id="skills" class="section">
+      <h2 class="section__title reveal">Skills</h2>
+      <ul class="skills" data-skills></ul>
+    </section>
+
+    <section id="projects" class="section">
+      <h2 class="section__title reveal">Selected projects</h2>
+      <div class="projects" data-projects></div>
+    </section>
+
+    <section id="contact" class="section section--contact">
+      <div class="glass glass--center reveal">
+        <h2 class="section__title" data-contact-heading></h2>
+        <p class="section__text" data-contact-text></p>
+        <a class="btn btn--primary btn--lg" data-email-link>Say hello</a>
+        <div class="socials" data-socials></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p data-footer></p>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
