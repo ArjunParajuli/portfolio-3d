@@ -10,50 +10,114 @@
   var CONFIG = {
     logo: 'AP.',
     kicker: 'Hello, I\u2019m',
-    name: 'Arjun Parajuli',
-    tagline: 'Creative developer crafting immersive web experiences that people remember.',
+    name: 'Arzunn',
+    tagline: 'Creative developer crafting immersive software that people remember.',
     avatar: 'assets/pp.jpg',
-    resume: 'assets/Arjun_Parajuli_Resume.pdf',
+    resume: 'https://drive.google.com/file/d/1v2tg_EJ1-hcLHR8-1UIaNaJV4foOFEJj/view?usp=sharing',
+
 
     about:
       'I\u2019m a developer who blends engineering precision with visual storytelling. ' +
       'From performant backends to silky 60fps frontends, I ship products that feel ' +
-      'as good as they look. Replace this text with your own story.',
+      'as good as they look.',
 
     stats: [
-      { value: '5+', label: 'Years experience' },
+      { value: '2+', label: 'Years experience' },
       { value: '30+', label: 'Projects shipped' },
-      { value: '12', label: 'Happy clients' }
     ],
 
     skills: [
-      'JavaScript / TypeScript', 'Three.js & WebGL', 'React / Vue', 'Node.js',
-      'Python', 'CI/CD & GitLab', 'UI / UX Design', 'Cloud & DevOps'
+      'JavaScript / TypeScript', 'React', 'Node.js', 'ExpressJS', 'React Native', 'WebRTC',
+      'Python', 'CI/CD & GitLab', 'Git', 'Github', 'Cloud & DevOps', "Docker", "Kubernetes", "Linux", "GitHub Actions", "AWS", "NextJS", "Java", "PostgreSQL", "MongoDB"
     ],
 
     projects: [
-      // Swap `image` with your own files later, e.g. 'assets/project1.jpg'
-      { title: 'Project One', description: 'A real-time 3D product configurator. Replace with your own project.', tags: ['Three.js', 'WebGL', 'React'], image: 'https://picsum.photos/seed/proj1/640/400', link: '#' },
-      { title: 'Project Two', description: 'High-traffic SaaS dashboard with live data visualizations.', tags: ['TypeScript', 'D3', 'Node.js'], image: 'https://picsum.photos/seed/proj2/640/400', link: '#' },
-      { title: 'Project Three', description: 'Award-style marketing site with scroll-driven storytelling.', tags: ['GSAP', 'Vite', 'CSS'], image: 'https://picsum.photos/seed/proj3/640/400', link: '#' },
-      { title: 'Project Four', description: 'Open-source tooling used by thousands of developers.', tags: ['OSS', 'CLI', 'Go'], image: 'https://picsum.photos/seed/proj4/640/400', link: '#' }
-    ],
+  { 
+    title: 'AI Powered Study Abroad Counsellor', 
+    description: 'Developed an AI-powered counsellor during a hackathon, earning a Certificate of Recognition. Implemented speech and text interaction for accessible form filling, integrated personalized university recommendations, and designed action-driven AI capabilities to execute tasks like shortlisting via voice/text commands.', 
+    tags: ['JavaScript', 'Python', 'NextJS', 'FastAPI', 'AI Integration', 'Speech-to-Text', 'Docker'], 
+    image: 'assets/studyabroad.png', 
+    link: '#' 
+  },
+  { 
+    title: 'Cloud-Native E-Commerce Platform Deployment', 
+    description: 'Architected and deployed a highly scalable 5+ microservices platform on AWS EKS using Terraform for modular IaC. Implemented an automated CI/CD pipeline using GitHub Actions alongside declarative GitOps delivery using ArgoCD, cutting build times by 10x and deployment time to seconds.', 
+    tags: ['AWS', 'Terraform', 'Docker', 'Kubernetes', 'GitHub Actions', 'ArgoCD'], 
+    image: 'assets/devops.png', 
+    link: '#' 
+  },
+  { 
+    title: 'Role Based User Management System', 
+    description: 'Developed and deployed a robust Role-Based Access Control (RBAC) system, including a fully functional backend on Render and a responsive frontend on Netlify. Implemented secure authentication and authorization using cookies, JWT and also integrated OAuth2.0 for seamless Sign in.', 
+    tags: ['React.js', 'Node.js', 'JWT', 'OAuth2.0'], 
+    image: 'assets/rolebased.jpg', 
+    link: '#' 
+  },
+  { 
+    title: 'InstaFood', 
+    description: "Developed a food delivery web app with real-time restaurant listings and menu integration using Swiggy's API, incorporating Redux for efficient state management.", 
+    tags: ['React.js', 'Redux', 'JavaScript', 'Tailwind CSS'], 
+    image: 'assets/instafood.jpg', 
+    link: '#' 
+  },
+  { 
+    title: 'Kaun Banega Crorepati Game', 
+    description: "Developed a web-based version of the popular Indian game show using React.js and Tailwind CSS, with efficient state management via React Context API and authentic gameplay features like '50-50', 'Audience Poll,' and 'Flip the Question.'", 
+    tags: ['JavaScript', 'Context API', 'React.js', 'Tailwind CSS'], 
+    image: 'assets/kbc.jpg', 
+    link: '#' 
+  },
+  { 
+    title: 'RentNest', 
+    description: 'Developed a property listing platform with features like user authentication and authorization, pagination, image upload. Designed and built RESTful APIs for handling property listings. Integrated an AI chatbot that helps users with queries related to the listings in the site.', 
+    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', "Langchain.js"], 
+    image: 'assets/rentnest.jpg', 
+    link: '#' 
+  },
+  { 
+    title: 'TheaterGPT', 
+    description: 'Developed a Netflix-inspired streaming platform using React and Redux, with Firebase authentication. Integrated Gemini API for personalized movie recommendations.', 
+    tags: ['React', 'Redux', 'Firebase', 'GeminiAI API'], 
+    image: 'assets/theatergpt.png', 
+    link: '#' 
+  },
+],
+
 
     // ---- EXPERIENCE: replace with details from your resume ----
     experience: [
-      { role: 'Senior Developer', company: 'Company Name', period: '2023 \u2014 Present', description: 'Led development of key products and mentored the team. Replace with your real experience from your resume.' },
-      { role: 'Software Engineer', company: 'Company Name', period: '2021 \u2014 2023', description: 'Built and shipped features across the stack. Replace with your real experience.' },
-      { role: 'Junior Developer', company: 'Company Name', period: '2019 \u2014 2021', description: 'Started my journey building web applications. Replace with your real experience.' }
-    ],
+  {
+    role: 'Software Engineer',
+    company: 'TCS',
+    period: 'Aug 2025 — Present',
+    location: 'Noida',
+    description: 'Architected and optimized cloud-native infrastructure for a high-scale platform. Provisioned scalable AWS environments using modular Terraform, reducing infrastructure setup time from over 1 hour to under 10 minutes. Containerized microservices with multi-stage Docker builds (10x faster builds, 150MB+ smaller images) and orchestrated 5+ services on Amazon EKS with RBAC. Designed cost-efficient traffic routing via AWS ALB Ingress Controller and implemented end-to-end GitOps CI/CD using GitHub Actions + ArgoCD, achieving sub-8-minute builds and near-instant deployments.'
+  },
+  {
+    role: 'Software Developer Intern',
+    company: 'Rhinostream Technologies',
+    period: 'Dec 2024 — May 2025',
+    location: 'Remote',
+    description: 'Developed core features for a Remote Access Platform using React, TypeScript, Node.js, and WebRTC. Built advanced input mapping systems (keyboard-to-gamepad, touch-to-keyboard, touch-to-mouse) enabling touchscreen devices to function as full controllers. Offloaded frame rendering to Web Workers, improving streaming performance by 20-30%. Implemented real-time performance monitoring (FPS, latency, jitter, bitrate, etc.) for optimal user experience.'
+  },
+  {
+    role: 'Web Developer Intern',
+    company: 'ADM Education & Welfare Society',
+    period: 'Aug 2024 — Oct 2024',
+    location: 'Remote',
+    description: 'Developed a task management platform using React, Node.js, Express, MongoDB, and TypeScript. Built an automated deadline reminder system with Nodemailer and node-cron, increasing course completion rates by 20%. Implemented task assignment, status tracking, and Role-Based Access Control (RBAC), improving team workflow efficiency by 25% and saving 6+ hours per week for 100+ interns.'
+  }
+],
 
-    contact: { heading: 'Let\u2019s build something great', text: 'I\u2019m currently open to new opportunities and freelance work.', email: 'you@example.com' },
+    contact: { heading: 'Let\u2019s build something great', text: 'I\u2019m currently open to new opportunities and freelance work.', email: 'arjunparajuliofficial55555@gmail.com' },
     socials: [
-      { label: 'GitLab', url: 'https://gitlab.com/hga-group' },
-      { label: 'GitHub', url: 'https://github.com/' },
-      { label: 'LinkedIn', url: 'https://linkedin.com/in/your-username' }
+      { label: 'GitHub', url: 'https://github.com/ArjunParajuli' },
+      { label: 'LinkedIn', url: 'https://www.linkedin.com/in/arjun-parajuli-0b82361b9/' },
+      { label: 'Leetcode', url: 'https://leetcode.com/u/Ar_June/' },
     ],
 
-    footer: '\u00a9 2026 Arjun Parajuli. Built with Three.js.'
+
+    // footer: '\u00a9 2026 Arjun Parajuli. Built with Three.js.'
   };
 
   // ---------------- Populate content -------------------------
