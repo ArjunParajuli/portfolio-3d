@@ -3,19 +3,12 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Your Name — Portfolio</title>
-  <meta name="description" content="Portfolio of Your Name — developer & creative technologist." />
+  <title>Arjun Parajuli — Portfolio</title>
+  <meta name="description" content="Portfolio of Arjun Parajuli — developer & creative technologist." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="css/style.css" />
-  <script type="importmap">
-    {
-      "imports": {
-        "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
-      }
-    }
-  </script>
 </head>
 <body>
   <canvas id="bg-canvas" aria-hidden="true"></canvas>
@@ -24,6 +17,7 @@
     <a class="nav__logo" href="#hero" data-logo></a>
     <nav class="nav__links">
       <a href="#about">About</a>
+      <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
       <a href="#contact" class="nav__cta">Hire me</a>
@@ -32,12 +26,24 @@
 
   <main>
     <section id="hero" class="hero">
-      <p class="hero__kicker reveal" data-kicker></p>
-      <h1 class="hero__title reveal" data-name></h1>
-      <p class="hero__tagline reveal" data-tagline></p>
-      <div class="hero__actions reveal">
-        <a href="#projects" class="btn btn--primary">View my work</a>
-        <a href="#contact" class="btn btn--ghost">Get in touch</a>
+      <div class="hero__content">
+        <p class="hero__kicker reveal" data-kicker></p>
+        <h1 class="hero__title reveal" data-name></h1>
+        <p class="hero__tagline reveal" data-tagline></p>
+        <div class="hero__actions reveal">
+          <a href="#projects" class="btn btn--primary">View my work</a>
+          <a href="#contact" class="btn btn--ghost">Get in touch</a>
+          <a href="" class="btn btn--ghost" data-resume-link download>Download Resume</a>
+        </div>
+      </div>
+      <div class="hero__avatar reveal" data-tilt>
+        <div class="avatar3d">
+          <div class="avatar3d__ring"></div>
+          <div class="avatar3d__rings" aria-hidden="true"><span></span><span></span><span></span></div>
+          <div class="avatar3d__photo"><img data-avatar src="assets/pp.jpg" alt="Arjun Parajuli" /></div>
+          <div class="avatar3d__shine" aria-hidden="true"></div>
+          <div class="avatar3d__glow"></div>
+        </div>
       </div>
       <div class="hero__scroll" aria-hidden="true"><span></span></div>
     </section>
@@ -48,6 +54,11 @@
         <p class="section__text" data-about></p>
         <div class="stats" data-stats></div>
       </div>
+    </section>
+
+    <section id="experience" class="section">
+      <h2 class="section__title reveal">Experience</h2>
+      <div class="timeline" data-experience></div>
     </section>
 
     <section id="skills" class="section">
@@ -74,6 +85,8 @@
     <p data-footer></p>
   </footer>
 
-  <script type="module" src="js/main.js"></script>
+  <!-- Fully static: non-module UMD build, runs from file:// (needs internet for CDN) -->
+  <script src="https://unpkg.com/three@0.160.0/build/three.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
