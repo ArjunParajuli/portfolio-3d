@@ -17,9 +17,9 @@
 
 
     about:
-      'I\u2019m a developer who blends engineering precision with visual storytelling. ' +
-      'From performant backends to silky 60fps frontends, I ship products that feel ' +
-      'as good as they look.',
+      'I\u2019m an engineer who blends engineering precision, visual storytelling, and robust architecture. From performant backends and automated deployment pipelines to silky 60fps frontends, I ship scalable, cloud-native products that feel as good as they look.',
+
+
 
     stats: [
       { value: '2+', label: 'Years experience' },
@@ -31,81 +31,90 @@
       'Python', 'CI/CD & GitLab', 'Git', 'Github', 'Cloud & DevOps', "Docker", "Kubernetes", "Linux", "GitHub Actions", "AWS", "NextJS", "Java", "PostgreSQL", "MongoDB"
     ],
 
-    projects: [
+   projects: [
   { 
     title: 'AI Powered Study Abroad Counsellor', 
-    description: 'Developed an AI-powered counsellor during a hackathon, earning a Certificate of Recognition. Implemented speech and text interaction for accessible form filling, integrated personalized university recommendations, and designed action-driven AI capabilities to execute tasks like shortlisting via voice/text commands.', 
+    description: 'Developed an AI-powered counsellor during a hackathon, earning a Certificate of Recognition.<br /><br />Implemented speech and text interaction for accessible form filling.<br /><br />Integrated personalized university recommendations, and designed action-driven AI capabilities to execute tasks like shortlisting via voice/text commands.', 
     tags: ['JavaScript', 'Python', 'NextJS', 'FastAPI', 'AI Integration', 'Speech-to-Text', 'Docker'], 
     image: 'assets/studyabroad.png', 
-    link: '#' 
+    link: 'https://github.com/ArjunParajuli/AI_Counsellor' 
   },
+
   { 
     title: 'Cloud-Native E-Commerce Platform Deployment', 
-    description: 'Architected and deployed a highly scalable 5+ microservices platform on AWS EKS using Terraform for modular IaC. Implemented an automated CI/CD pipeline using GitHub Actions alongside declarative GitOps delivery using ArgoCD, cutting build times by 10x and deployment time to seconds.', 
+    description: 'Architected and deployed a highly scalable 5+ microservices platform on AWS EKS using Terraform for modular IaC.<br /><br />Implemented an automated CI/CD pipeline using GitHub Actions alongside declarative GitOps delivery using ArgoCD.<br /><br />Cut build times by 10x and deployment time to seconds.', 
     tags: ['AWS', 'Terraform', 'Docker', 'Kubernetes', 'GitHub Actions', 'ArgoCD'], 
     image: 'assets/devops.png', 
     link: '#' 
   },
+
   { 
     title: 'Role Based User Management System', 
-    description: 'Developed and deployed a robust Role-Based Access Control (RBAC) system, including a fully functional backend on Render and a responsive frontend on Netlify. Implemented secure authentication and authorization using cookies, JWT and also integrated OAuth2.0 for seamless Sign in.', 
+    description: 'Developed and deployed a robust Role-Based Access Control (RBAC) system, including a fully functional backend on Render and a responsive frontend on Netlify.<br /><br />Implemented secure authentication and authorization using cookies and JWT.<br /><br />Integrated OAuth2.0 for seamless Sign in.', 
     tags: ['React.js', 'Node.js', 'JWT', 'OAuth2.0'], 
     image: 'assets/rolebased.jpg', 
-    link: '#' 
+    link: 'https://github.com/ArjunParajuli/RBAC-Frontend' 
   },
+
   { 
     title: 'InstaFood', 
-    description: "Developed a food delivery web app with real-time restaurant listings and menu integration using Swiggy's API, incorporating Redux for efficient state management.", 
+    description: "Developed a food delivery web app with real-time restaurant listings and menu integration using Swiggy's API.<br /><br />Incorporated Redux for efficient state management.", 
     tags: ['React.js', 'Redux', 'JavaScript', 'Tailwind CSS'], 
     image: 'assets/instafood.jpg', 
-    link: '#' 
+    link: 'https://insta-food-eight.vercel.app/' 
   },
+
   { 
     title: 'Kaun Banega Crorepati Game', 
-    description: "Developed a web-based version of the popular Indian game show using React.js and Tailwind CSS, with efficient state management via React Context API and authentic gameplay features like '50-50', 'Audience Poll,' and 'Flip the Question.'", 
+    description: "Developed a web-based version of the popular Indian game show using React.js and Tailwind CSS.<br /><br />Managed efficient state via React Context API.<br /><br />Featured authentic gameplay lifelines like '50-50', 'Audience Poll,' and 'Flip the Question.'", 
     tags: ['JavaScript', 'Context API', 'React.js', 'Tailwind CSS'], 
     image: 'assets/kbc.jpg', 
-    link: '#' 
+    link: 'https://kaun-banega-crorepati.netlify.app/' 
   },
+
   { 
     title: 'RentNest', 
-    description: 'Developed a property listing platform with features like user authentication and authorization, pagination, image upload. Designed and built RESTful APIs for handling property listings. Integrated an AI chatbot that helps users with queries related to the listings in the site.', 
-    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', "Langchain.js"], 
+    description: 'Developed a property listing platform with features like user authentication, authorization, pagination, and image upload.<br /><br />Designed and built RESTful APIs for handling property listings.<br /><br />Integrated an AI chatbot that helps users with queries related to the site listings.', 
+    tags: ['MongoDB', 'Express.js', 'React', 'Node.js', 'Langchain.js'], 
     image: 'assets/rentnest.jpg', 
-    link: '#' 
+    link: 'https://property-listing-website-fullstack.onrender.com' 
   },
+
   { 
     title: 'TheaterGPT', 
-    description: 'Developed a Netflix-inspired streaming platform using React and Redux, with Firebase authentication. Integrated Gemini API for personalized movie recommendations.', 
+    description: 'Developed a Netflix-inspired streaming platform using React and Redux, featuring Firebase authentication.<br /><br />Integrated Gemini API for personalized movie recommendations.', 
     tags: ['React', 'Redux', 'Firebase', 'GeminiAI API'], 
     image: 'assets/theatergpt.png', 
-    link: '#' 
+    link: 'https://theater-gpt.vercel.app/' 
   },
 ],
 
 
+
     // ---- EXPERIENCE: replace with details from your resume ----
-    experience: [
+  experience: [
   {
     role: 'Software Engineer',
     company: 'TCS',
     period: 'Aug 2025 — Present',
     location: 'Noida',
-    description: 'Architected and optimized cloud-native infrastructure for a high-scale platform. Provisioned scalable AWS environments using modular Terraform, reducing infrastructure setup time from over 1 hour to under 10 minutes. Containerized microservices with multi-stage Docker builds (10x faster builds, 150MB+ smaller images) and orchestrated 5+ services on Amazon EKS with RBAC. Designed cost-efficient traffic routing via AWS ALB Ingress Controller and implemented end-to-end GitOps CI/CD using GitHub Actions + ArgoCD, achieving sub-8-minute builds and near-instant deployments.'
+    description: 'Architected and optimized cloud-native infrastructure for a high-scale platform.<br /><br />Provisioned scalable AWS environments using modular Terraform, reducing infrastructure setup time from over 1 hour to under 10 minutes.<br /><br />Containerized microservices with multi-stage Docker builds (10x faster builds, 150MB+ smaller images) and orchestrated 5+ services on Amazon EKS with RBAC.<br /><br />Designed cost-efficient traffic routing via AWS ALB Ingress Controller and implemented end-to-end GitOps CI/CD using GitHub Actions + ArgoCD, achieving sub-8-minute builds and near-instant deployments.'
   },
+
   {
     role: 'Software Developer Intern',
     company: 'Rhinostream Technologies',
     period: 'Dec 2024 — May 2025',
     location: 'Remote',
-    description: 'Developed core features for a Remote Access Platform using React, TypeScript, Node.js, and WebRTC. Built advanced input mapping systems (keyboard-to-gamepad, touch-to-keyboard, touch-to-mouse) enabling touchscreen devices to function as full controllers. Offloaded frame rendering to Web Workers, improving streaming performance by 20-30%. Implemented real-time performance monitoring (FPS, latency, jitter, bitrate, etc.) for optimal user experience.'
+    description: 'Developed core features for a Remote Access Platform using React, TypeScript, Node.js, and WebRTC.<br /><br />Built advanced input mapping systems (keyboard-to-gamepad, touch-to-keyboard, touch-to-mouse) enabling touchscreen devices to function as full controllers.<br /><br />Offloaded frame rendering to Web Workers, improving streaming performance by 20–30%.<br /><br />Implemented real-time performance monitoring (FPS, latency, jitter, bitrate, etc.) for optimal user experience.'
   },
+
   {
     role: 'Web Developer Intern',
     company: 'ADM Education & Welfare Society',
     period: 'Aug 2024 — Oct 2024',
     location: 'Remote',
-    description: 'Developed a task management platform using React, Node.js, Express, MongoDB, and TypeScript. Built an automated deadline reminder system with Nodemailer and node-cron, increasing course completion rates by 20%. Implemented task assignment, status tracking, and Role-Based Access Control (RBAC), improving team workflow efficiency by 25% and saving 6+ hours per week for 100+ interns.'
+    description: 'Developed a task management platform using React, Node.js, Express, MongoDB, and TypeScript.<br /><br />Built an automated deadline reminder system with Nodemailer and node-cron, increasing course completion rates by 20%.<br /><br />Implemented task assignment, status tracking, and Role-Based Access Control (RBAC), improving team workflow efficiency by 25% and saving 6+ hours per week for 100+ interns.'
   }
 ],
 
